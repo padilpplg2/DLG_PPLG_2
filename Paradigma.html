@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>PANGERAN JUAN</h1>
+    <h2>
+    <script>
+        var kuda={
+        nama : "Juan",
+        warna : "Hitam",
+        jumlah_kaki : "4",
+        kelamin : "Jantan",
+        mata : {
+            warna_mata : "Coklat",
+            warna_pupil : "hitam"
+        },
+        dipanggil : function (){
+            return "nengok"
+        },
+        makan : function (){
+            return "makan rumput";
+        }
+     }
+     document.write ("Ini pangeran " + kuda.nama + "<br/>" );
+     document.write ("Pangeran Juan berkulit " + kuda.warna +  "<br/>" );
+     document.write ("Juan berkaki " + kuda.jumlah_kaki + "<br/>" );
+     document.write ("Dan dia berkelamin " + kuda.kelamin +  "<br/>" );
+     document.write ("Warna mata Juan adalah " + kuda.mata.warna_mata +  "<br/>" );
+     document.write ("Warna pupil mata Juan adalah " + kuda.mata.warna_pupil +  "<br/>" );
+     document.write ("Pangeran Juan kalo di panggil langsung " + kuda.dipanggil("nengok") + " lohhh" +  "<br/>" );
+     document.write ("Dan dia makanan favoritnya " + kuda.makan("makan rumput") + " tauu" +  "<br/>" );
+    </script>
+    </h2>
+</body>
+</html>
