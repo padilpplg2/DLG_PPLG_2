@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class tikus{
+            constructor(nama, warna, kaki){
+                this.nama = nama;
+                this.warna = warna;
+                this.kaki = kaki
+            }
+        }
+
+        var tikus1 = new tikus();
+        tikus1.nama = "Penyu";
+        tikus1.warna = "pink";
+        tikus1.kaki = "4";
+        
+        var tikus2 = new tikus("Kumbang", "Pink", 4);
+        
+        document.write(tikus2.nama);
+    </script>
+</body>
+</html>
