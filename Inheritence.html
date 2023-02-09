@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     class bangun_ruang {
+        luas (){}
+        keliling (){}
+     }
+     class persegi extends bangun_ruang{
+        sisi;
+        luas(){
+            return this.sisi * this.sisi
+        }
+        keliling (){
+            return 4 * this.sisi;
+        }
+     }
+     var persegi1 = new persegi();
+     persegi1.sisi = 4;
+     document.write("luas persegi nya: " + persegi1.luas() + "<br/>");
+     document.write("keliling persegi nya: " + persegi1.keliling() + "<br/>");
+
+     class segitiga extends bangun_ruang{
+        alas;
+        tinggi;
+        sisi;
+        luas(){
+            return 0.5 * this.alas * this.tinggi
+        }
+        keliling(){
+            return this.sisi_A * this.sisi_B * this.sisi_C
+        }
+     }
+     var segitiga1 = new segitiga()
+        segitiga1.alas=4;
+        segitiga1.tinggi=4;
+        segitiga1.sisi_A=2;
+        segitiga1.sisi_B=4;
+        segitiga1.sisi_C=6;
+        document.write("luas segitiga nya: " + segitiga1.luas() + "<br/>");
+        document.write("keliling segitiga nya: " + segitiga1.keliling()+"<br/>");
+
+     class lingkaran extends bangun_ruang{
+        r;
+        pi;
+        luas(){
+            return this.pi * this.r**2
+        }
+        keliling(){
+            return 2 * this.pi * this.r
+        }
+     }
+     var lingkaran1 = new lingkaran()
+     lingkaran1.r=6
+     lingkaran1.pi=3,14
+     document.write("luas lingkaran nya: " + lingkaran1.luas()+"<br/>");
+     document.write("keliling lingkaran nya: " + lingkaran1.luas()+"<br/>");
+    </script>
+</body>
+</html>
